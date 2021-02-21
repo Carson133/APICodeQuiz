@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple:#715a8e;
+    --light_purple:#715a7d;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 10px 0;
+}
+
+#highscoresLink{
+    cursor: pointer;
+    color: var(--purple)
+}
+
+#timer{
+}
+
+.mainGame{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 25% 0 25%;
+}
+
+#titleScreen{
+}
+
+#gameTitle{
+    font-size: 2.5em;
+    padding: 0 0 20px 0;
+}
+
+#description{
+    font-size: 2em;
+}
+
+#startButton, #submitButton, #ans1, #ans2, #ans3, #ans4{
+    cursor: pointer;
+    color: white;
+    background-color: var(--purple);
+    border-radius: 5px;
+    padding: 0 2px 0 2px;
+    
+}
+
+#startButton:hover, #submitButton:hover, #ans1:hover, #ans2:hover, #ans3:hover, #ans4:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--light_purple);
+}

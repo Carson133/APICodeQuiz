@@ -9,11 +9,45 @@
 </head>
 <body>
     <header>
-        <h3 id="highscores">Highscores</h3>
+        <h3 id="highscoresLink">View Highscores</h3>
         <h3 id="timer"></h3>
     </header>
     <main>
-
+        <section class="mainGame" id="titleScreen">
+            <h1 id="gameTitle">Coding Quiz Challenge</h1>
+            <p id="description">
+                Try to answer the following code related questions within the time limit. Keep in mid that incorrect answers will penalize your score/time by ten seconds!
+            </p>
+            <h3 id="startButton">Start Quiz</h3>
+        </section>
+        <section class="mainGame" id="gameScreen">
+            <h1 id="question"></h1>
+            <ol>
+                <li id="ans1"></li>
+                <li id="ans2"></li>
+                <li id="ans3"></li>
+                <li id="ans4"></li>
+            </ol>
+        </section>
+        <section class="mainGame" id="scoreScreen">
+            <h1 id="doneText">All Done!</h1>
+            <h2 id="finalScore"></h2>
+            <form id="initialsInput">
+                <label for="initialsU">Enter Initials:</label>
+                <input type="text" id="initialsU" name="initialsU"><br><br>
+                <input type="submit" id="submitButton" value="Submit">
+            </form>
+        </section>
+        <section class="mainGame" id="highscoreScreen">
+            <h1 id=highscore>Highscores</h1>
+            <ol id="highscoreList"></ol>
+            <h3 id="backButton"></h3>
+            <h3 id="clearButton"></h3>
+        </section>
+        <section class="mainGame" id="resultScreen">
+            <br>
+            <h4 id="result"></h4>
+        </section>
     </main>
     <script src="./assets/js/script.js"></script>
 </body>
