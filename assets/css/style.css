@@ -6,7 +6,7 @@
 
 :root{
     --purple:#715a8e;
-    --light_purple:#715a7d;
+    --light_purple:#;
 
 }
 
@@ -40,24 +40,31 @@ header{
 
 #description{
     font-size: 2em;
-}
+} 
 
-#startButton, #submitButton, #ans1, #ans2, #ans3, #ans4{
+#startButton, #submitButton, button{
     color: white;
     background-color: var(--purple);
     border-radius: 5px;
-    padding: 0 2px 0 2px;
+    padding: 2px 2px 2px 2px;
     margin-top: 10px;
+    list-style: none;
+    cursor: pointer;
+    float: left;
 }
 
-#startButton:hover, #submitButton:hover, #ans1:hover, #ans2:hover, #ans3:hover, #ans4:hover{
+#startButton:hover, #submitButton:hover, button:hover{
     cursor: pointer;
     color: white;
-    background-color: var(--light_purple);
+    background-color: lightpink;
 }
 
 #gameScreen {
     align-items: flex-start;
+}
+
+#gameScreen ul li{
+    list-style: none;
 }
 
 #question {
