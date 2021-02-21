@@ -17,8 +17,14 @@ function setTime() {
     }, 1000);
   }
 
+function startGame(){
+    document.getElementById("titleScreen").style.visibility = "hidden";
+    document.getElementById("gameScreen").style.visibility = "visible";
+}
 
   document.getElementById("startButton").addEventListener("click", setTime);
+  document.getElementById("startButton").addEventListener("click", startGame);
+
 
   document.getElementById("gameScreen").style.visibility = "hidden";
   document.getElementById("scoreScreen").style.visibility = "hidden";

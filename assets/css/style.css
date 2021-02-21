@@ -14,7 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 10px 0;
+    padding: 5px 5px 10px 5px;
 }
 
 #highscoresLink{
@@ -27,13 +27,10 @@ header{
 
 .mainGame{
     display:flex;
-    text-align: center;
-    justify-content: center;
     flex-direction: column;
-    margin: 0 25% 0 25%;
-}
-
-#titleScreen{
+    padding: 0 25% 0 25%;
+    text-align: center;
+    align-items: center;
 }
 
 #gameTitle{
@@ -46,16 +43,23 @@ header{
 }
 
 #startButton, #submitButton, #ans1, #ans2, #ans3, #ans4{
-    cursor: pointer;
     color: white;
     background-color: var(--purple);
     border-radius: 5px;
     padding: 0 2px 0 2px;
-    
+    margin-top: 10px;
 }
 
 #startButton:hover, #submitButton:hover, #ans1:hover, #ans2:hover, #ans3:hover, #ans4:hover{
     cursor: pointer;
     color: white;
     background-color: var(--light_purple);
+}
+
+#gameScreen {
+    align-items: flex-start;
+}
+
+#question {
+    font-size: 2em;
 }
